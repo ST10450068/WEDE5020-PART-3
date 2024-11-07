@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enquiry - Line Tech</title>
+</head>
+<body>
+    <h1>Enquiry Form</h1>
+    <p>Please fill out the form below to send us your enquiries. We'll get back to you as soon as possible.</p>
+
+    <!-- Enquiry Form -->
+    <form action="submit_enquiry.html" method="POST">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Submit Enquiry">
+    </form>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="contact.html">Back to Contact</a> | 
+        <a href="index.html">Back to Home</a>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <p>Line Tech 2024. All rights reserved.</p>
+        <p>&copy; <span id="footer-date"></span> Line-Tech</p>
+    </footer>
+</body>
+</html>

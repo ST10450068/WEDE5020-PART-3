@@ -1,0 +1,459 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    animation: fadeIn 1.5s forwards; /* Apply fade-in animation */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo h1 {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-us, .team, .history, .testimonials {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.team-container {
+    display: flex;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #333;
+}
+
+/* Program detail divs */
+.program-detail {
+    max-width: 600px; /* Limits the width of each program section */
+    margin: 20px auto; /* Centers the div horizontally and adds spacing on top */
+    background-color: #ffffff; /* White background to distinguish sections */
+    border: 1px solid #ddd; /* Light border around program details */
+    padding: 20px; /* Adds padding inside the div for spacing */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    border-radius: 8px; /* Rounds the corners slightly */
+}
+
+.program-detail h3 {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center; /* Centers the heading */
+}
+
+.program-detail p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center; /* Centers the text content */
+}
+
+.program-detail .cta-btn {
+    display: block; /* Make the button behave as a block element */
+    width: fit-content; /* Ensures the button is only as wide as its content */
+    padding: 12px 25px; /* Adds more padding for a bigger button */
+    background-color: #4CAF50; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 12px; /* More rounded corners for a modern look */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect and slight scale on hover */
+    text-align: center; /* Centers the text inside the button */
+    margin: 20px auto; /* Centers the button horizontally within the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1.1em; /* Slightly increases the font size */
+}
+
+.program-detail .cta-btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Slight scale up effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increases shadow for a more prominent hover effect */
+}
+
+.program-detail .cta-btn:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
+    background-color: #39843b; /* Darkest green on click */
+}
+
+
+/* General section styling */
+.donation-banner {
+    text-align: center; /* Centers text in the banner */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 30px 20px;
+}
+
+.donation-banner h2 {
+    font-size: 2em;
+    color: #333; /* Darker font for emphasis */
+}
+
+.donation-banner p {
+    font-size: 1.2em;
+    color: #555; /* Slightly lighter grey for the paragraph */
+    margin-top: 10px;
+}
+
+/* Donation options section */
+.donation-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.donation-header {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.donation-header h3 {
+    font-size: 1.8em; /* Slightly larger font size for emphasis */
+    color: #333; /* Darker color for the header */
+}
+
+.option {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.option h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.option p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Centering and styling the call-to-action buttons */
+.cta-btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 12px 30px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 auto; /* Centers the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly scale up */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-btn:active {
+    transform: scale(0.98); /* Shrink slightly when clicked */
+    background-color: #39843b; /* Dark green when active */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .option {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+
+/* Contact section styling */
+.contact {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 40px auto; /* Center the section */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels for better visibility */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Inner padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button.cta-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button corners */
+    font-size: 1.1em; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+button.cta-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Location styling */
+.location {
+    margin-top: 40px; /* Space above the location section */
+}
+
+.location h2 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.location p {
+    margin-bottom: 20px; /* Space below the paragraph */
+    color: #555; /* Dark grey for the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .contact {
+        padding: 15px; /* Less padding on small screens */
+    }
+
+    button.cta-btn {
+        width: 100%; /* Full width button on mobile */
+    }
+}
+
+
+
+.logo img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.title-section h1 {
+    font-size: 26px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #e0e0e0;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Green color on hover */
+}
+
+.donate-btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.donate-btn:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.cta-btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #45a049;
+}
+
+.about, .programs-highlight, .success-story {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
+.programs-highlight .program {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.programs-highlight .program:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-slider .testimonial {
+    display: inline-block;
+    width: 22%;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    color: #4CAF50;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    .programs-highlight .program {
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+
+    .testimonial-slider .testimonial {
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
