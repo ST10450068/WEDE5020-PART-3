@@ -1,4 +1,3 @@
-Here’s an enhanced version of your README with a more professional tone, clearer instructions, and additional sections to improve readability:
 
 ---
 
