@@ -4,7 +4,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
-        // Insert current date in footer
+    });
+});
+
+// Insert current date in footer
 document.getElementById("footer-date").textContent = new Date().getFullYear();
 
 // Open lightbox with specified image
@@ -17,6 +20,7 @@ function openLightbox(imageSrc) {
 function closeLightbox() {
     document.getElementById("lightbox").style.display = "none";
 }
+
 // Clear placeholder text when user focuses on field
 function clearField(field) {
     if (field.defaultValue === field.value) {
@@ -28,13 +32,15 @@ function clearField(field) {
 document.querySelector('form').addEventListener('submit', function(e) {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
-    
+
+    // Email validation regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!name || !email) {
         e.preventDefault();
         alert("Please fill out all required fields.");
+    } else if (!emailPattern.test(email)) {
+        e.preventDefault();
+        alert("Please enter a valid email address with an '@' symbol.");
     }
-});
-
-
-    });
 });
